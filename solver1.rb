@@ -65,7 +65,7 @@ File.foreach(ARGV[0]) { |line|
   board << line.chomp.split(", ").map { |item| item.to_i }
 }
 
-puts ARGV[0].slice(0, 8)
+puts ARGV[0]
 for k in 0..8
   for l in 0..8
     print board[k][l].to_s + " "
